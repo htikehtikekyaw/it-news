@@ -8,6 +8,11 @@
                 <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
+                    {{ Str::Slug("min ga la par",'-').'_'.uniqid() }}
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
