@@ -34,7 +34,7 @@
                                 <span class="small"><a href="{{ route('baseOnDate',$article->created_at) }}">{{ $article->created_at->format('d-M-Y') }}</a></span>
                             </div>
                         </div>
-                        <a href="{{ route('detail',$article->id) }}" class="btn btn-outline-primary rounded-pill px-3">Read More</a>
+                        <a href="{{ route('detail',$article->slug) }}" class="btn btn-outline-primary rounded-pill px-3">Read More</a>
                     </div>
                 </div>
             </div>
