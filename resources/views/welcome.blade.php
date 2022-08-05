@@ -8,14 +8,12 @@
                     <a class="fw-bold h4 d-block text-decoration-none"
                         href="{{ route('detail',$article->id) }}">
                         {{ $article->title}} </a>
-
                     <div class="small post-category">
                         <a href="{{ route('baseOnCategory',$article->category->id) }}" rel="category tag">{{ $article->category->title }}</a> 
                     </div>
                     <div class="text-black-50 the-excerpt">
                         <p>{{ Str::words($article->description,40) }}</p>
                     </div>
-
                     <div class="d-flex justify-content-between align-items-center see-more-group">
                         <div class="d-flex align-items-center">
                             <div class="me-5">
